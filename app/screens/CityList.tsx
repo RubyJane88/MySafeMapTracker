@@ -3,7 +3,7 @@ import {View, StyleSheet, Alert} from 'react-native';
 
 const CityList: FC = () => {
     useEffect(() => {
-        console.log('alert')
+        console.log('ruby')
     });
 
     return (
