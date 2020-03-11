@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, Text, StyleSheet} from 'react-native';
 import {Button} from 'react-native-paper';
-import CityList from "./app/screens/CityList";
+import AreaList from "./app/areas/screens/AreaList";
 import LoginScreen from "./app/auth/LoginScreen";
 
 
@@ -9,7 +9,7 @@ const App = () => {
   return (
       <View style={styles.container}>
        <LoginScreen/>
-       <CityList/>
+       <AreaList/>
       </View>
 
   );

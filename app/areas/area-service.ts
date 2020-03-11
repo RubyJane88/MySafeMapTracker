@@ -1,6 +1,8 @@
-import {api} from "../api-config";
+import {api} from '../api-config';
+import {IAreaModel} from './area-model';
 
-
-export async function getTest() {
-    return await api.get('https://wuhan-coronavirus-api.laeyoung.endpoint.ainize.ai/jhu-edu/timeseries')
+export async function getAreas() {
+  return await api.get<IAreaModel[]>(
+    'https://wuhan-coronavirus-api.laeyoung.endpoint.ainize.ai/jhu-edu/timeseries',
+  );
 }
